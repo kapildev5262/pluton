@@ -1,0 +1,136 @@
+calibraint@calibraint-ThinkPad-L14-Gen-3:~/Documents/Project/combined$ cargo run
+warning: constant `RAYDIUM_SUBSCRIPTION` is never used
+ --> src/subscriptions.rs:2:11
+  |
+2 | pub const RAYDIUM_SUBSCRIPTION: &str = r#"
+  |           ^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(dead_code)]` on by default
+
+warning: constant `PUMPSWAP_SUBSCRIPTION` is never used
+  --> src/subscriptions.rs:87:11
+   |
+87 | pub const PUMPSWAP_SUBSCRIPTION: &str = r#"
+   |           ^^^^^^^^^^^^^^^^^^^^^
+
+warning: constant `METEORA_SUBSCRIPTION` is never used
+   --> src/subscriptions.rs:173:11
+    |
+173 | pub const METEORA_SUBSCRIPTION: &str = r#"
+    |           ^^^^^^^^^^^^^^^^^^^^
+
+warning: `combined` (bin "combined") generated 3 warnings
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.51s
+     Running `target/debug/combined`
+Server starting on http://127.0.0.1:8080
+Access the SSE stream at http://127.0.0.1:8080/stream
+🎯 Setting up multiple concurrent subscriptions...
+🎧 Listening for real-time data from all subscriptions...
+
+🔌 Connecting to Bitquery WebSocket for 'combined'...
+✅ Connected 'combined'! Initializing connection...
+🤝 Connection acknowledged for 'combined'!
+📡 Sending subscription for 'combined'...
+🔍 Parsing data for combined
+⏭️  Skipping control message 'pong' for combined 
+
+🔍 Parsing data for combined
+⏭️  Skipping control message 'pong' for combined 
+
+🔍 Parsing data for combined
+✅ Processing data message for combined
+Got Payload
+✅ Found instruction data for combined: timestamp=2025-07-07T11:00:27Z, signature=RbV1NJYqjXNYRkyqSgtGvBx7H98eCgmGn4EDu2smE6Uuo6R67et2opNUCt9KCcBLKe33pS4Z1euviLeqifvopq9
+method name:create_pool
+config method name:create_pool
+config method name:create_pool
+🎯 Combined mode: matched method 'create_pool' to PumpSwap config
+📋 PumpSwap program name: pump_amm, method: create_pool
+💰 Extracted amounts - Token A: Some("25000000000"), Token B: Some("1000000000000000")
+🔍 Account 0: 3hvKHMTHb3RZyuevAMqoRkp7iXaCMNVecaHFUK6PxQrh (pool)
+🏊 Found pool address: 3hvKHMTHb3RZyuevAMqoRkp7iXaCMNVecaHFUK6PxQrh
+🔍 Account 1: ADyA8hdefvWN2dbGGWFotbzWxrAvLW83WG6QCVXvJKqw (global_config)
+🔍 Account 2: 3dP8Mq4CMrU4mNMBHT73HdHuwNSDQDZkP3s4DjJigLgj (creator)
+🔍 Account 3: So11111111111111111111111111111111111111112 (base_mint)
+🪙 Found token A mint: So11111111111111111111111111111111111111112
+🔍 Account 4: GMQ3pxmBoBTp8cad5Hktg7ghVwKhvzAsAhddQfcXBonK (quote_mint)
+🪙 Found token B mint: GMQ3pxmBoBTp8cad5Hktg7ghVwKhvzAsAhddQfcXBonK
+🔍 Account 5: ERcRFFwpxGC7oKr1h9o5HuEhpxsXcfdvMDWEyvRpAoX4 (lp_mint)
+🔍 Account 6: Bq9uofBgsNYcqk8mhn7ptaRsK9PZouJfzJXr6aH59XBG (user_base_token_account)
+🔍 Account 7: G5su5mvnwAzQzg4YL4GahzwsiSBnGh4E6RVJ4xTtpwna (user_quote_token_account)
+🔍 Account 8: EYcjVbZkntqW2gNLBuVAh49HDRsrPNMmggg5TLE4eHe2 (user_pool_token_account)
+🔍 Account 9: A7LWAHZQ4zNScRACijpkDQALjDBqFWEVJQP1Gr1KmSSC (pool_base_token_account)
+🔍 Account 10: 9G23EgZ5Pf2455whi3ghQPikzsBcnhjheQAiXBoPRk71 (pool_quote_token_account)
+🔍 Account 11: 11111111111111111111111111111111 (system_program)
+🔍 Account 12: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb (token_2022_program)
+🔍 Account 13: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA (base_token_program)
+🔍 Account 14: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA (quote_token_program)
+🔍 Account 15: ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL (associated_token_program)
+🔍 Account 16: GS4CU59F31iL7aR2Q8zVS8DRrcRnXX1yjQ66TqNVQnaR (event_authority)
+🔍 Account 17: pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA (program)
+🔢 Found 2 token addresses: {"base_mint": "So11111111111111111111111111111111111111112", "quote_mint": "GMQ3pxmBoBTp8cad5Hktg7ghVwKhvzAsAhddQfcXBonK"}
+🏊 Pool address: Some("3hvKHMTHb3RZyuevAMqoRkp7iXaCMNVecaHFUK6PxQrh")
+🚀 SolSniffer Token Analyzer v1.0
+
+🟡 ===== TOKEN SECURITY ANALYSIS =====
+📍 Token:  ()
+🔗 Address: GMQ3pxmBoBTp8cad5Hktg7ghVwKhvzAsAhddQfcXBonK
+📊 Risk Score: 52/100 (Medium)
+🍯 Honeypot Risk: ⚠️  HIGH
+
+💰 FINANCIAL METRICS:
+  • Market Cap: $0.00
+  • Price: $0.000000
+  • Supply: 1000000000.00
+  • Total Liquidity: 0.00 SOL
+
+👥 HOLDER ANALYSIS:
+  • Total Holders: 3
+  • Top 10 Hold: 100.00%
+
+🛡️  SECURITY STATUS:
+  • Mint Authority: ✅ Disabled
+  • Freeze Authority: ✅ Disabled
+  • LP Burned: ⚠️  No
+
+⚠️  AUDIT RISKS:
+  • High risk indicators: 4
+  • Moderate risk indicators: 1
+
+📅 Deploy Time: 2025-07-07T11:00:26.000Z
+=====================================
+
+🚨 HONEYPOT ALERT: This token shows signs of being a honeypot!
+✅ Analysis complete for token B: GMQ3pxmBoBTp8cad5Hktg7ghVwKhvzAsAhddQfcXBonK
+💰 SOL amount for classification: 25
+✅ Successfully parsed pool creation event for combined
+
+┌─────────────────────┬──────────────────────┐
+│ 🎯 NEW POOL CREATED │                      │
+├─────────────────────┼──────────────────────┤
+│ DEX                 │ PumpSwap             │
+├─────────────────────┼──────────────────────┤
+│ Pool Address        │ 3hvKHMTH...UK6PxQrh  │
+├─────────────────────┼──────────────────────┤
+│ Token A             │ So111111...11111112  │
+├─────────────────────┼──────────────────────┤
+│ Token B             │ GMQ3pxmB...QfcXBonK  │
+├─────────────────────┼──────────────────────┤
+│ Token A Amount      │ 25.000000            │
+├─────────────────────┼──────────────────────┤
+│ Token B Amount      │ 1.00M                │
+├─────────────────────┼──────────────────────┤
+│ SOL Amount          │ 25.000000 SOL        │
+├─────────────────────┼──────────────────────┤
+│ Transaction         │ RbV1NJYq...qifvopq9  │
+├─────────────────────┼──────────────────────┤
+│ Timestamp           │ 2025-07-07T11:00:27Z │
+└─────────────────────┴──────────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 New pool created on PumpSwap: So11111111111111111111111111111111111111112 - GMQ3pxmBoBTp8cad5Hktg7ghVwKhvzAsAhddQfcXBonK
+
+calibraint@calibraint-ThinkPad-L14-Gen-3:~/Documents/Project/combined$ curl -N http://127.0.0.1:8080/stream
+data: {"data":{"coin_type":"ImmediateCoin","dex_name":"PumpSwap","liquidity_amounts":{"sol_amount":"25000000000","sol_amount_formatted":"25.000000","token_a_amount":"25000000000","token_a_amount_formatted":"25.000000","token_b_amount":"1000000000000000","token_b_amount_formatted":"1.00M"},"pool_address":"3hvKHMTHb3RZyuevAMqoRkp7iXaCMNVecaHFUK6PxQrh","timestamp":"2025-07-07T11:00:27Z","token_a":{"address":"So11111111111111111111111111111111111111112","audit_risks":["No risk"],"decimals":9,"deploy_time":"Unknown","freeze_disabled":false,"holder_count":0,"is_honeypot":false,"liquidity_total":0.0,"lp_burned":false,"market_cap":0.0,"mint_disabled":false,"price":0.0,"risk_level":"Low","score":100,"supply_amount":0.0,"token_name":"Wrapped SOL","token_symbol":"WSOL","top_10_percentage":0.0},"token_b":{"address":"GMQ3pxmBoBTp8cad5Hktg7ghVwKhvzAsAhddQfcXBonK","audit_risks":["High risk indicators: 4","Moderate risk indicators: 1"],"decimals":9,"deploy_time":"2025-07-07T11:00:26.000Z","freeze_disabled":true,"holder_count":3,"is_honeypot":true,"liquidity_total":0.0,"lp_burned":false,"market_cap":0.0,"mint_disabled":true,"price":0.0,"risk_level":"Medium","score":52,"supply_amount":1000000000.0,"token_name":"","token_symbol":"","top_10_percentage":100.0},"transaction_signature":"RbV1NJYqjXNYRkyqSgtGvBx7H98eCgmGn4EDu2smE6Uuo6R67et2opNUCt9KCcBLKe33pS4Z1euviLeqifvopq9"},"event_type":"pool_creation","subscription":"PumpSwap","timestamp":"2025-07-07T11:00:45.238229228+00:00"}
+
+data: {"data":{"type":"pong"},"event_type":"raw","subscription":"combined","timestamp":"2025-07-02T12:43:01.095059037+00:00"}
